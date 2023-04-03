@@ -1,0 +1,55 @@
+.intro {
+  width: 785px;
+  height: 490px;
+  margin: 0 0 0 148px;
+  padding: 0;
+  color: #fff;
+}
+
+.intro__title {
+  max-width: 785px;
+  height: 116px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 58px;
+  margin: 92px 0 40px 0;
+  padding: 0;
+}
+
+.intro__first-paragraph {
+  max-width: 720px;
+  height: 102px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+.intro__second-paragraph {
+  max-width: 720px;
+  height: 156px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 163%;
+  margin: 32px 0 0 0;
+  padding: 0;
+}
+.intro__author {
+  max-width: 720px;
+  height: 34px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
