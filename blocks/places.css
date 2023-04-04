@@ -109,5 +109,88 @@
   font-size: 18px;
   line-height: 22px;
   border: none;
-  /* grid-column: 1 / 2; */
+}
+
+@media screen and (max-width: 627px) {
+  .places {
+    max-width: 288px;
+    margin: 62px auto 0 auto;
+    padding: 0;
+  }
+  .place {
+    max-width: 100%;
+    grid-template-columns: 288px;
+    grid-auto-rows: max-content;
+    grid-template-areas:
+      "title"
+      "artist"
+      "image"
+      "paragraphs"
+      "button ";
+    row-gap: 30px;
+    margin: 0 0 63px 0;
+  }
+  .place__title {
+    font-size: 32px;
+    line-height: 35px;
+    text-align: left;
+    height: auto;
+    margin-bottom: 0;
+  }
+  .place__artist {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+  .place__image {
+    max-width: 100%;
+    height: auto;
+  }
+  .place__paragraph {
+    max-width: 100%;
+  }
+  .place__button {
+    margin: 0 auto 0 auto;
+    max-width: 100%;
+  }
+  .place__button:hover {
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 627px) and (max-width: 768px) {
+  .places {
+    max-width: calc(100% - 20px);
+    margin-top: 90px;
+  }
+
+  .place {
+    grid-gap: 0;
+    column-gap: 25px;
+  }
+  .place__title {
+    font-size: 42px;
+    line-height: 46px;
+    height: auto;
+    margin-bottom: 46px;
+  }
+  .place__artist {
+    margin-bottom: 46px;
+  }
+  .place__paragraph {
+    font-size: 16px;
+  }
+  .place__image {
+    max-width: 100%;
+    height: auto;
+  }
+  .place__button {
+    margin-top: 48px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1280px) {
+  .places {
+    max-width: calc(100% - 20px);
+    margin-top: 90px;
+  }
 }

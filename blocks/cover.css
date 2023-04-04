@@ -26,6 +26,10 @@
   z-index: -1;
   background-color: #2a2c2f;
   opacity: 0.3;
+  transition: opacity ease 450ms;
+}
+.cover:hover .cover::before {
+  opacity: 0.8;
 }
 .cover__title {
   margin: 0;
@@ -79,4 +83,54 @@
   margin: 0;
   padding: 0;
   color: #ffffff;
+}
+@media screen and (max-width: 627px) {
+  .cover {
+    max-width: 100%;
+    height: 254px;
+    margin: 0 auto;
+    row-gap: 16px;
+    background-size: cover;
+  }
+  .cover::before {
+    max-width: 100%;
+    height: 100%;
+  }
+  .cover__title {
+    font-size: 32px;
+    line-height: 35px;
+    margin: 0;
+    height: auto;
+  }
+  .cover__subtitle {
+    height: auto;
+    margin: 0;
+    max-width: 100%;
+  }
+  .cover__paragraph {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .cover__button {
+    height: auto;
+  }
+  .cover__link {
+    margin: 0;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+@media (min-width: 627px) and (max-width: 768px) {
+  .cover {
+    max-width: 100%;
+    height: 746px;
+    background-size: cover;
+  }
+  .cover::before {
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #2a2c2f;
+    opacity: 0.3;
+  }
 }
