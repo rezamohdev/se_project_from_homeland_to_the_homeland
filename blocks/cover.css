@@ -28,9 +28,6 @@
   opacity: 0.3;
   transition: opacity ease 450ms;
 }
-.cover:hover .cover::before {
-  opacity: 0.8;
-}
 .cover__title {
   margin: 0;
   padding: 0;
